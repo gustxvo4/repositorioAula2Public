@@ -11,7 +11,7 @@ app.get('/listUsers', function (req, res) {
 
 app.get('/listUser/:id', function (req, res) {
     // First read existing users.
-    //ultima mudancaHJ
+    //MUDANCA MUDANCA MUDANCA
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        var users = JSON.parse( data );
        var user = users["user" + req.params.id] 
